@@ -1,0 +1,559 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\Tes.X.production.o
+cinit CODE 0 F F 11 2
+text1 CODE 0 36B 36B 1D 2
+text2 CODE 0 201 201 64 2
+text3 CODE 0 265 265 2C 2
+text4 CODE 0 291 291 2C 2
+text5 CODE 0 315 315 2B 2
+text6 CODE 0 2BD 2BD 2C 2
+text7 CODE 0 2E9 2E9 2C 2
+text8 CODE 0 340 340 2B 2
+text9 CODE 0 388 388 15 2
+text10 CODE 0 129 129 D8 2
+maintext CODE 0 20 20 109 2
+cstackCOMMON COMMON 1 70 70 6 1
+cstackBANK0 BANK0 1 30 30 4 1
+intentry CODE 0 4 4 8 2
+bssBANK0 BANK0 1 20 20 10 1
+clrtext CODE 0 39D 39D 8 2
+bssCOMMON COMMON 1 76 76 4 1
+config CONFIG 4 2007 2007 2 2
+$C:\Users\Usuario\AppData\Local\Temp\s1qk.o
+reset_vec CODE 0 0 0 3 2
+end_init CODE 0 C C 3 2
+config CONFIG 4 2007 2007 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 34-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 34-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-3 2
+CONST 3A5-1FFF 2
+ENTRY 3-3 2
+ENTRY 3A5-1FFF 2
+IDLOC 2000-2003 2
+STACK 110-16F 1
+CODE 3-3 2
+CODE 3A5-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 7A-7D 1
+EEDATA 2100-21FF 2
+STRCODE 3-3 2
+STRCODE 3A5-1FFF 2
+STRING 3-3 2
+STRING 3A5-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\Tes.X.production.o
+F cinit CODE >519:C:\Users\Usuario\AppData\Local\Temp\s1qk.s
+F cinit CODE >522:C:\Users\Usuario\AppData\Local\Temp\s1qk.s
+F cinit CODE >596:C:\Users\Usuario\AppData\Local\Temp\s1qk.s
+10 cinit CODE >597:C:\Users\Usuario\AppData\Local\Temp\s1qk.s
+11 cinit CODE >598:C:\Users\Usuario\AppData\Local\Temp\s1qk.s
+12 cinit CODE >599:C:\Users\Usuario\AppData\Local\Temp\s1qk.s
+13 cinit CODE >602:C:\Users\Usuario\AppData\Local\Temp\s1qk.s
+14 cinit CODE >603:C:\Users\Usuario\AppData\Local\Temp\s1qk.s
+15 cinit CODE >604:C:\Users\Usuario\AppData\Local\Temp\s1qk.s
+16 cinit CODE >605:C:\Users\Usuario\AppData\Local\Temp\s1qk.s
+17 cinit CODE >606:C:\Users\Usuario\AppData\Local\Temp\s1qk.s
+1C cinit CODE >612:C:\Users\Usuario\AppData\Local\Temp\s1qk.s
+1C cinit CODE >614:C:\Users\Usuario\AppData\Local\Temp\s1qk.s
+1D cinit CODE >615:C:\Users\Usuario\AppData\Local\Temp\s1qk.s
+4 intentry CODE >81:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+129 text10 CODE >81:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+129 text10 CODE >82:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+12F text10 CODE >83:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+130 text10 CODE >85:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+139 text10 CODE >86:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+13F text10 CODE >87:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+143 text10 CODE >88:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+144 text10 CODE >90:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+148 text10 CODE >92:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+14C text10 CODE >93:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+14D text10 CODE >95:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+156 text10 CODE >96:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+15C text10 CODE >97:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+160 text10 CODE >98:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+161 text10 CODE >100:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+165 text10 CODE >102:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+169 text10 CODE >103:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+16A text10 CODE >105:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+173 text10 CODE >106:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+179 text10 CODE >107:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+17D text10 CODE >108:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+185 text10 CODE >109:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+186 text10 CODE >111:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+18A text10 CODE >112:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+18E text10 CODE >114:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+194 text10 CODE >117:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+19E text10 CODE >118:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+1AE text10 CODE >119:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+1B2 text10 CODE >120:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+1B3 text10 CODE >122:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+1BC text10 CODE >123:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+1C2 text10 CODE >124:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+1C6 text10 CODE >125:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+1CE text10 CODE >126:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+1CF text10 CODE >128:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+1D3 text10 CODE >129:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+1D7 text10 CODE >131:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+1DD text10 CODE >134:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+1E7 text10 CODE >135:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+1F7 text10 CODE >136:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+1FA text10 CODE >137:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+1FA text10 CODE >154:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+388 text9 CODE >387:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+38B text9 CODE >388:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+38F text9 CODE >389:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+392 text9 CODE >390:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+393 text9 CODE >391:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+39B text9 CODE >392:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+39C text9 CODE >393:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+340 text8 CODE >294:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+340 text8 CODE >297:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+344 text8 CODE >299:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+345 text8 CODE >300:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+34D text8 CODE >301:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+350 text8 CODE >302:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+359 text8 CODE >303:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+36A text8 CODE >304:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+2E9 text7 CODE >318:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+2E9 text7 CODE >321:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+2ED text7 CODE >323:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+2EE text7 CODE >324:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+2F7 text7 CODE >325:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+2FA text7 CODE >326:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+303 text7 CODE >327:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+314 text7 CODE >328:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+2BD text6 CODE >306:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+2BD text6 CODE >309:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+2C1 text6 CODE >311:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+2C2 text6 CODE >312:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+2CB text6 CODE >313:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+2CE text6 CODE >314:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+2D7 text6 CODE >315:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+2E8 text6 CODE >316:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+315 text5 CODE >330:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+315 text5 CODE >333:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+319 text5 CODE >335:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+31A text5 CODE >336:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+322 text5 CODE >337:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+325 text5 CODE >338:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+32E text5 CODE >339:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+33F text5 CODE >340:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+291 text4 CODE >354:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+291 text4 CODE >357:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+295 text4 CODE >359:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+296 text4 CODE >360:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+29F text4 CODE >361:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+2A2 text4 CODE >362:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+2AB text4 CODE >363:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+2BC text4 CODE >364:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+265 text3 CODE >342:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+265 text3 CODE >345:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+269 text3 CODE >347:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+26A text3 CODE >348:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+273 text3 CODE >349:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+276 text3 CODE >350:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+27F text3 CODE >351:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+290 text3 CODE >352:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+201 text2 CODE >218:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+201 text2 CODE >220:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+205 text2 CODE >221:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+206 text2 CODE >223:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+20A text2 CODE >224:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+20C text2 CODE >225:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+20D text2 CODE >226:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+20E text2 CODE >227:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+20F text2 CODE >229:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+212 text2 CODE >230:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+213 text2 CODE >231:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+214 text2 CODE >232:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+215 text2 CODE >235:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+218 text2 CODE >236:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+21A text2 CODE >243:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+21B text2 CODE >244:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+21C text2 CODE >245:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+21D text2 CODE >246:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+21E text2 CODE >249:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+21F text2 CODE >250:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+220 text2 CODE >251:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+223 text2 CODE >252:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+224 text2 CODE >253:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+225 text2 CODE >254:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+226 text2 CODE >257:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+229 text2 CODE >258:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+22A text2 CODE >259:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+22C text2 CODE >262:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+230 text2 CODE >263:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+234 text2 CODE >264:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+236 text2 CODE >265:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+238 text2 CODE >268:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+23A text2 CODE >269:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+23C text2 CODE >270:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+23D text2 CODE >271:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+23E text2 CODE >273:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+23F text2 CODE >274:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+241 text2 CODE >275:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+242 text2 CODE >277:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+246 text2 CODE >278:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+247 text2 CODE >279:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+24A text2 CODE >280:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+24B text2 CODE >284:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+24E text2 CODE >285:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+251 text2 CODE >286:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+254 text2 CODE >287:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+257 text2 CODE >288:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+258 text2 CODE >289:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+25C text2 CODE >290:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+260 text2 CODE >291:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+264 text2 CODE >292:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+36B text1 CODE >365:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+36C text1 CODE >366:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+370 text1 CODE >367:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+372 text1 CODE >369:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+375 text1 CODE >370:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+376 text1 CODE >372:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+377 text1 CODE >374:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+379 text1 CODE >375:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+37B text1 CODE >377:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+37C text1 CODE >379:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+382 text1 CODE >380:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+383 text1 CODE >382:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+386 text1 CODE >383:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+387 text1 CODE >385:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+20 maintext CODE >159:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+20 maintext CODE >160:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+25 maintext CODE >165:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+2B maintext CODE >166:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+32 maintext CODE >167:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+35 maintext CODE >169:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+3E maintext CODE >170:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+44 maintext CODE >171:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+49 maintext CODE >172:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+4A maintext CODE >173:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+50 maintext CODE >174:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+55 maintext CODE >175:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+56 maintext CODE >177:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+5B maintext CODE >180:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+66 maintext CODE >181:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+6C maintext CODE >182:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+71 maintext CODE >183:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+72 maintext CODE >184:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+78 maintext CODE >185:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+7D maintext CODE >186:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+7E maintext CODE >188:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+83 maintext CODE >193:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+8E maintext CODE >194:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+99 maintext CODE >195:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+A4 maintext CODE >196:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+AF maintext CODE >197:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+BA maintext CODE >198:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+C5 maintext CODE >200:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+C7 maintext CODE >202:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+D1 maintext CODE >203:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+DB maintext CODE >204:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+E7 maintext CODE >205:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+F3 maintext CODE >206:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+FF maintext CODE >207:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+10B maintext CODE >208:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+117 maintext CODE >211:D:\Usuario\Documents\Tareas_2021\Programacion_de_microcontroladores\Tareas_lab\Tes.X\main.c
+39D clrtext CODE >583:C:\Users\Usuario\AppData\Local\Temp\s1qk.s
+39D clrtext CODE >584:C:\Users\Usuario\AppData\Local\Temp\s1qk.s
+39E clrtext CODE >585:C:\Users\Usuario\AppData\Local\Temp\s1qk.s
+39E clrtext CODE >586:C:\Users\Usuario\AppData\Local\Temp\s1qk.s
+39F clrtext CODE >587:C:\Users\Usuario\AppData\Local\Temp\s1qk.s
+3A0 clrtext CODE >588:C:\Users\Usuario\AppData\Local\Temp\s1qk.s
+3A1 clrtext CODE >589:C:\Users\Usuario\AppData\Local\Temp\s1qk.s
+3A2 clrtext CODE >590:C:\Users\Usuario\AppData\Local\Temp\s1qk.s
+3A3 clrtext CODE >591:C:\Users\Usuario\AppData\Local\Temp\s1qk.s
+3A4 clrtext CODE >592:C:\Users\Usuario\AppData\Local\Temp\s1qk.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\Tes.X.production.o
+__Hspace_0 3A5 0 ABS 0 - -
+__Hspace_1 7A 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+_servo2Rotate90 4CA 0 CODE 0 text3 dist/default/production\Tes.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__end_of_writeToEEPROM 710 0 CODE 0 text1 dist/default/production\Tes.X.production.o
+_servo1Rotate180 5D2 0 CODE 0 text7 dist/default/production\Tes.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+_WPUB 95 0 ABS 0 - dist/default/production\Tes.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\Usuario\AppData\Local\Temp\s1qk.o
+_main 40 0 CODE 0 maintext dist/default/production\Tes.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\Tes.X.production.o
+start 18 0 CODE 0 init C:\Users\Usuario\AppData\Local\Temp\s1qk.o
+_servo2Rotate180 522 0 CODE 0 text4 dist/default/production\Tes.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\Tes.X.production.o
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+_OPTION_REGbits 81 0 ABS 0 - dist/default/production\Tes.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+__size_of_servo1Rotate90 0 0 ABS 0 - dist/default/production\Tes.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Usuario\AppData\Local\Temp\s1qk.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Usuario\AppData\Local\Temp\s1qk.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Usuario\AppData\Local\Temp\s1qk.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Usuario\AppData\Local\Temp\s1qk.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Usuario\AppData\Local\Temp\s1qk.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Usuario\AppData\Local\Temp\s1qk.o
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+_OSCCONbits 8F 0 ABS 0 - dist/default/production\Tes.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\Tes.X.production.o
+__end_of_servo2Rotate90 522 0 CODE 0 text3 dist/default/production\Tes.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+__Hclrtext 0 0 ABS 0 clrtext -
+readFromEEPROM@data 31 0 BANK0 1 cstackBANK0 dist/default/production\Tes.X.production.o
+_ADRESH 1E 0 ABS 0 - dist/default/production\Tes.X.production.o
+_ADRESL 9E 0 ABS 0 - dist/default/production\Tes.X.production.o
+_ANSELH 189 0 ABS 0 - dist/default/production\Tes.X.production.o
+_EECON1bits 18C 0 ABS 0 - dist/default/production\Tes.X.production.o
+_CCPR1L 15 0 ABS 0 - dist/default/production\Tes.X.production.o
+_CCPR2L 1B 0 ABS 0 - dist/default/production\Tes.X.production.o
+_EECON2 18D 0 ABS 0 - dist/default/production\Tes.X.production.o
+_EEDATA 10C 0 ABS 0 - dist/default/production\Tes.X.production.o
+__size_of_servo1Rotate180 0 0 ABS 0 - dist/default/production\Tes.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+_Interrupciones 252 0 CODE 0 text10 dist/default/production\Tes.X.production.o
+__size_of_servo2Rotate180 0 0 ABS 0 - dist/default/production\Tes.X.production.o
+_valor_pot3l 2F 0 BANK0 1 bssBANK0 dist/default/production\Tes.X.production.o
+_valor_pot4l 2E 0 BANK0 1 bssBANK0 dist/default/production\Tes.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\Usuario\AppData\Local\Temp\s1qk.o
+___stacklo 0 0 ABS 0 - C:\Users\Usuario\AppData\Local\Temp\s1qk.o
+__size_of_setup 0 0 ABS 0 - dist/default/production\Tes.X.production.o
+start_initialization 1E 0 CODE 0 cinit dist/default/production\Tes.X.production.o
+_TRISCbits 87 0 ABS 0 - dist/default/production\Tes.X.production.o
+clear_ram0 73A 0 CODE 0 clrtext dist/default/production\Tes.X.production.o
+__pcstackBANK0 30 0 BANK0 1 cstackBANK0 dist/default/production\Tes.X.production.o
+__end_of_Interrupciones 402 0 CODE 0 text10 dist/default/production\Tes.X.production.o
+_readFromEEPROM 710 0 CODE 0 text9 dist/default/production\Tes.X.production.o
+servo1Rotate0@i 30 0 BANK0 1 cstackBANK0 dist/default/production\Tes.X.production.o
+servo2Rotate0@i 30 0 BANK0 1 cstackBANK0 dist/default/production\Tes.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\Usuario\AppData\Local\Temp\s1qk.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 40 0 CODE 0 cinit -
+__Hstack 0 0 STACK 2 stack -
+__Hmaintext 0 0 ABS 0 maintext -
+_RB0_old 22 0 BANK0 1 bssBANK0 dist/default/production\Tes.X.production.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4012 0 CONFIG 4 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit 1E 0 CODE 0 cinit -
+__Lstack 0 0 STACK 2 stack -
+_dato_mem3l 2A 0 BANK0 1 bssBANK0 dist/default/production\Tes.X.production.o
+_dato_mem4l 28 0 BANK0 1 bssBANK0 dist/default/production\Tes.X.production.o
+_PORTCbits 7 0 ABS 0 - dist/default/production\Tes.X.production.o
+_INTCONbits B 0 ABS 0 - dist/default/production\Tes.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 18 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 18 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+servo1Rotate90@i 30 0 BANK0 1 cstackBANK0 dist/default/production\Tes.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_PR2 92 0 ABS 0 - dist/default/production\Tes.X.production.o
+_RB0 30 0 ABS 0 - dist/default/production\Tes.X.production.o
+__S0 3A5 0 ABS 0 - -
+__S1 7A 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__end_of_readFromEEPROM 73A 0 CODE 0 text9 dist/default/production\Tes.X.production.o
+saved_w 7E 0 ABS 0 - dist/default/production\Tes.X.production.o
+_valor_pot1 79 0 COMMON 1 bssCOMMON dist/default/production\Tes.X.production.o
+_valor_pot2 78 0 COMMON 1 bssCOMMON dist/default/production\Tes.X.production.o
+_valor_pot3 77 0 COMMON 1 bssCOMMON dist/default/production\Tes.X.production.o
+_valor_pot4 76 0 COMMON 1 bssCOMMON dist/default/production\Tes.X.production.o
+__Lintentry 8 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Usuario\AppData\Local\Temp\s1qk.o
+_servo1Rotate90 57A 0 CODE 0 text6 dist/default/production\Tes.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__size_of_servo2Rotate90 0 0 ABS 0 - dist/default/production\Tes.X.production.o
+_PIE1bits 8C 0 ABS 0 - dist/default/production\Tes.X.production.o
+_servo2Rotate0 62A 0 CODE 0 text5 dist/default/production\Tes.X.production.o
+__ptext10 252 0 CODE 0 text10 dist/default/production\Tes.X.production.o
+__pmaintext 40 0 CODE 0 maintext dist/default/production\Tes.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+servo1Rotate180@i 30 0 BANK0 1 cstackBANK0 dist/default/production\Tes.X.production.o
+_dato_mem1 2D 0 BANK0 1 bssBANK0 dist/default/production\Tes.X.production.o
+_dato_mem2 2C 0 BANK0 1 bssBANK0 dist/default/production\Tes.X.production.o
+_dato_mem3 2B 0 BANK0 1 bssBANK0 dist/default/production\Tes.X.production.o
+_dato_mem4 29 0 BANK0 1 bssBANK0 dist/default/production\Tes.X.production.o
+writeToEEPROM@data 75 0 COMMON 1 cstackCOMMON dist/default/production\Tes.X.production.o
+_servo1Rotate0 680 0 CODE 0 text8 dist/default/production\Tes.X.production.o
+_ADCON0bits 1F 0 ABS 0 - dist/default/production\Tes.X.production.o
+_ADCON1bits 9F 0 ABS 0 - dist/default/production\Tes.X.production.o
+__end_of_servo1Rotate90 5D2 0 CODE 0 text6 dist/default/production\Tes.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__pbssCOMMON 76 0 COMMON 1 bssCOMMON dist/default/production\Tes.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+_PIR1bits C 0 ABS 0 - dist/default/production\Tes.X.production.o
+_PIR2bits D 0 ABS 0 - dist/default/production\Tes.X.production.o
+__Lend_init 18 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 38 0 CODE 0 cinit dist/default/production\Tes.X.production.o
+__Hintentry 18 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+__Hreset_vec 6 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+_writeToEEPROM 6D6 0 CODE 0 text1 dist/default/production\Tes.X.production.o
+__ptext1 6D6 0 CODE 0 text1 dist/default/production\Tes.X.production.o
+__ptext2 402 0 CODE 0 text2 dist/default/production\Tes.X.production.o
+__ptext3 4CA 0 CODE 0 text3 dist/default/production\Tes.X.production.o
+__ptext4 522 0 CODE 0 text4 dist/default/production\Tes.X.production.o
+__ptext5 62A 0 CODE 0 text5 dist/default/production\Tes.X.production.o
+__ptext6 57A 0 CODE 0 text6 dist/default/production\Tes.X.production.o
+__ptext7 5D2 0 CODE 0 text7 dist/default/production\Tes.X.production.o
+__ptext8 680 0 CODE 0 text8 dist/default/production\Tes.X.production.o
+__ptext9 710 0 CODE 0 text9 dist/default/production\Tes.X.production.o
+__size_of_Interrupciones 0 0 ABS 0 - dist/default/production\Tes.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__size_of_servo2Rotate0 0 0 ABS 0 - dist/default/production\Tes.X.production.o
+_band_mem 20 0 BANK0 1 bssBANK0 dist/default/production\Tes.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+servo2Rotate180@i 30 0 BANK0 1 cstackBANK0 dist/default/production\Tes.X.production.o
+__end_of__initialization 38 0 CODE 0 cinit dist/default/production\Tes.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__Lclrtext 0 0 ABS 0 clrtext -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\Tes.X.production.o
+__size_of_servo1Rotate0 0 0 ABS 0 - dist/default/production\Tes.X.production.o
+__end_of_servo2Rotate0 680 0 CODE 0 text5 dist/default/production\Tes.X.production.o
+__Hend_init 1E 0 CODE 0 end_init -
+__end_of_main 252 0 CODE 0 maintext dist/default/production\Tes.X.production.o
+_CCP2CONbits 1D 0 ABS 0 - dist/default/production\Tes.X.production.o
+_ANSEL 188 0 ABS 0 - dist/default/production\Tes.X.production.o
+_EEADR 10D 0 ABS 0 - dist/default/production\Tes.X.production.o
+_PORTB 6 0 ABS 0 - dist/default/production\Tes.X.production.o
+_PORTC 7 0 ABS 0 - dist/default/production\Tes.X.production.o
+_PORTD 8 0 ABS 0 - dist/default/production\Tes.X.production.o
+_PORTE 9 0 ABS 0 - dist/default/production\Tes.X.production.o
+_TRISA 85 0 ABS 0 - dist/default/production\Tes.X.production.o
+_TRISB 86 0 ABS 0 - dist/default/production\Tes.X.production.o
+_TRISC 87 0 ABS 0 - dist/default/production\Tes.X.production.o
+_TRISD 88 0 ABS 0 - dist/default/production\Tes.X.production.o
+_TRISE 89 0 ABS 0 - dist/default/production\Tes.X.production.o
+__end_of_setup 4CA 0 CODE 0 text2 dist/default/production\Tes.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__size_of_readFromEEPROM 0 0 ABS 0 - dist/default/production\Tes.X.production.o
+interrupt_function 8 0 CODE 0 intentry dist/default/production\Tes.X.production.o
+_setup 402 0 CODE 0 text2 dist/default/production\Tes.X.production.o
+readFromEEPROM@address 30 0 BANK0 1 cstackBANK0 dist/default/production\Tes.X.production.o
+__end_of_servo1Rotate180 62A 0 CODE 0 text7 dist/default/production\Tes.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production\Tes.X.production.o
+__end_of_servo2Rotate180 57A 0 CODE 0 text4 dist/default/production\Tes.X.production.o
+writeToEEPROM@address 74 0 COMMON 1 cstackCOMMON dist/default/production\Tes.X.production.o
+__initialization 1E 0 CODE 0 cinit dist/default/production\Tes.X.production.o
+__pbssBANK0 20 0 BANK0 1 bssBANK0 dist/default/production\Tes.X.production.o
+__end_of_servo1Rotate0 6D6 0 CODE 0 text8 dist/default/production\Tes.X.production.o
+__size_of_writeToEEPROM 0 0 ABS 0 - dist/default/production\Tes.X.production.o
+_T2CONbits 12 0 ABS 0 - dist/default/production\Tes.X.production.o
+_CCP1CONbits 17 0 ABS 0 - dist/default/production\Tes.X.production.o
+servo2Rotate90@i 30 0 BANK0 1 cstackBANK0 dist/default/production\Tes.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cstackCOMMON 1 70 70 A 1
+intentry 0 4 8 3A1 2
+reset_vec 0 0 0 3 2
+bssBANK0 1 20 20 14 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
